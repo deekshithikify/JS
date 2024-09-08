@@ -1,0 +1,51 @@
+<head>
+    <title> Hello Page </title>
+</head>
+<body>
+    <h3> Welcome to Java Script Tutorials </h3>
+    <p id="p1"> Paragraph 1 </p>
+    <p id="p2"> Paragraph 2 </p>
+    <p id="p3"> Paragraph 3 </p>
+    <p id="p4"> Paragraph 4 </p>
+    <p id="ps"> Paragraph 5 </p>
+    <p id="p6"> Paragraph 6 </p>
+    <p id="p7"> Paragraph 7 </p>
+     
+    
+
+<script>
+    
+    var f1="apple";
+    var f2="orange";
+    var f3="grapes";
+
+//arrays
+
+    fruits=["apple", "orange", "grapes"];
+    document.getElementById("p1").innerHTML=fruits;
+
+    fruits[1]="watermelon";
+    document.getElementById("p2").innerHTML=fruits;
+
+    fruits.push("Banana", "Rasberry");
+    document.getElementById("p3").innerHTML="Array with new element is " + fruits;
+
+    fruits.pop();
+    document.getElementById("p4").innerHTML="Array with element dropped " +fruits;
+
+    for(let i=0;i<fruits.length;i++)
+     fruits[i]=r=Math.floor((Math.random()*100));
+
+    document.getElementById("p5").innerHTML="Before Sorting array is " + fruits;
+
+    fruits.sort();
+    document.getElementById("p6").innerHTML="After Sorting array is " + fruits;
+
+    const fruitsarr=new Array("blueberry", "raswberry","strawberry");  
+    document.getElementById("p7").innerHTML="another way of array definition is "+ fruitsarr;
+
+
+   </script>
+
+</body>
+   
